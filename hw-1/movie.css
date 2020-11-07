@@ -66,3 +66,56 @@ footer {
 #paradajz {
      float: left;
 }
+
+.kritike {
+     display: flex;
+     flex-direction: column;
+     
+}
+
+.quotebubble  {
+     font-size: 13pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     margin: 1em;
+     overflow: auto;
+
+}
+
+.kritika {
+     width: 90%;
+     background-color: #FFFFFF;
+     border: 2px solid #CCCCCC;
+     border-radius: 12px;
+     align-self: center;
+
+
+}
+
+.quotebubble img {
+     margin-right: 5px;
+     margin-bottom: 5px;
+
+}
+
+.autor img {
+     margin-right: 5px;
+     margin-bottom: 5px;
+     float: left;
+
+}
+
+.autor {
+     
+     overflow: auto;
+     width: 90%;
+     align-self: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 13pt;
+
+}
+
+.publication {
+     font-style: italic;
+
+}
+
