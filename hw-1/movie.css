@@ -19,9 +19,7 @@ h1 {
      margin-right: 22.5%;
      display: flex;
      background-color: #EEEEEE;
-     border-style: solid;
-     border-width: 5px;
-     border-color: grey;
+     border: 5px solid grey;
 }
 
 .div1 {
@@ -32,18 +30,39 @@ h1 {
 .div2 {
      width: 35%;
      background-color:  #A2B964;
+     
 }
 
 #cover {
     width: 100%;
     height: 400px;
+    
 }
 
-.footer {
+footer {
      margin-left: 22.5%;
      margin-right: 22.5%;
      text-align: center;
      background-color:  #A2B964;
      padding: 0.5em;
 
+}
+
+.div3 {
+     background-image: url('images/rbg.png');
+     overflow: auto;
+     margin-bottom: 1rem;
+     background-repeat: repeat;
+     
+     
+     
+}
+#procenat {
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+
+}
+#paradajz {
+     float: left;
 }
