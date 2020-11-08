@@ -24,19 +24,15 @@ h1 {
 
 .div1 {
       width: 65%;
-     
 }
 
 .div2 {
      width: 35%;
      background-color:  #A2B964;
-     
 }
 
 #cover {
     width: 100%;
-    height: 400px;
-    
 }
 
 footer {
@@ -45,7 +41,6 @@ footer {
      text-align: center;
      background-color:  #A2B964;
      padding: 0.5em;
-
 }
 
 .div3 {
@@ -53,15 +48,11 @@ footer {
      overflow: auto;
      margin-bottom: 1rem;
      background-repeat: repeat;
-     
-     
-     
 }
 #procenat {
     font-size: 48pt;
     font-weight: bold;
     color: red;
-
 }
 #paradajz {
      float: left;
@@ -69,8 +60,7 @@ footer {
 
 .kritike {
      display: flex;
-     flex-direction: column;
-     
+     flex-direction: column;   
 }
 
 .quotebubble  {
@@ -78,7 +68,6 @@ footer {
      font-family: Georgia, 'Times New Roman', Times, serif;
      margin: 1em;
      overflow: auto;
-
 }
 
 .kritika {
@@ -87,36 +76,29 @@ footer {
      border: 2px solid #CCCCCC;
      border-radius: 12px;
      align-self: center;
-
-
 }
 
 .quotebubble img {
      margin-right: 5px;
      margin-bottom: 5px;
-
 }
 
 .autor img {
      margin-right: 5px;
      margin-bottom: 5px;
      float: left;
-
 }
 
 .autor {
-     
      overflow: auto;
      width: 90%;
      align-self: center;
      font-family: Georgia, 'Times New Roman', Times, serif;
      font-size: 13pt;
-
 }
 
 .publication {
      font-style: italic;
-
 }
 
 .informacije {
@@ -124,12 +106,10 @@ footer {
      margin-right: 15px;
      font-size: 12pt;
      font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .informacije dt {
      font-weight: bold;
-     
 }
 
 .informacije dd {
