@@ -19,7 +19,7 @@ h1 {
      margin-right: 22.5%;
      display: flex;
      background-color: #EEEEEE;
-     border: 5px solid grey;
+     box-shadow: 5px 5px 5px grey;
 }
 
 .div1 {
@@ -41,6 +41,7 @@ footer {
      text-align: center;
      background-color:  #A2B964;
      padding: 0.5em;
+     box-shadow: 5px 5px 5px grey;
 }
 
 .div3 {
