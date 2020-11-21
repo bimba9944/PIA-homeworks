@@ -1,17 +1,102 @@
 body {
-    background-color: skyblue;
+    background-color: whitesmoke;
 
+}
+
+.container-fluid {
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
 #naslovna img{
     width: 100%;
     
-    
 }
 
 #naslovna {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 0%;
+    padding-right: 0%;   
+}
+
+.nav {
+    background-color: sandybrown;
+    padding: 0.5%;
+    
+    
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-item {
+    background-color: white;
+}
+
+#o_nama {
+    background-color: whitesmoke;
+}
+
+#naslov1 {
+    text-align: center;
+    margin-bottom: 3%;
+    padding-top: 4%;
+}
+
+#tekst1 {
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#tekst2 {
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#tekst3 {
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#Meni {
+    background-color: whitesmoke;
+    
+}
+
+#naslov2 {
+    text-align: center;
+}
+
+#pizza1_levo {
+    width: 100%;
+    
+}
+.col-sm-3 {
+    padding: 0;
+    
+}
+
+.col-sm-8 {
+    padding: 0;
+    
+}
+
+.row {
+    width: 100%;
+    border: 5px solid black ;
+    margin-left: 0;
+}
+
+#naslovi_pizza {
+    padding-top: 4%;
+    padding-bottom: 1%;
+    margin-left: 3%;
 }
 
 

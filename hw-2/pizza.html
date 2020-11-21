@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>PIA HOMEWORK - Pizzeria</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -11,19 +12,99 @@
 
   </head>
   <body>
-    
 
-    
-    <div id="naslovna" class="container-fluid">
-        <img src="images/pizza2.jpg" alt="pizza1" class="rounded">
-        
-        
+    <div class="container-fluid">
+    <div id="naslovna" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#naslovna" data-slide-to="0" class="active"></li>
+        <li data-target="#naslovna" data-slide-to="1"></li>
+        <li data-target="#naslovna" data-slide-to="2"></li>
+      </ul>
+      
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images\naslovna_slika.jpg" alt="naslovna_slika" height="280px">
+        </div>
+        <div class="carousel-item">
+          <img src="images\naslovna_slika3.jpg" alt="naslovna_slika1" height="280px">
+        </div>
+        <div class="carousel-item">
+          <img src="images\naslovna_slika4.jpg" alt="naslovna_slika2" height="280px">
+        </div>
+      </div>
+      
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#naslovna" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#naslovna" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
     </div>
-
-
-
+    </div>
     
 
+    <div class="container-fluid">
+         <ul class="nav nav-tabs sticky-top">
+           <li class="nav-item">
+             <a class="nav-link active" href="#">Pocetna</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#o_nama">O nama</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#Meni">Meni</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Kontakt</a>
+           </li>
+         </ul>
+    
+        <div id="o_nama"> <!-- Ovaj tekst je preuzet sa stranice picerije "Pizzeria Masters"-->
+          <h1 id="naslov1">O nama</h1>
+              <p id="tekst1"> Pizzeria je porodični biznis, a osoblje je stručno i uvek spremno da Vam ispuni i najdelikatniju gurmansku želju.
+              Ovde svako može kreirati svoj obrok uz pomoć i savet naših veštih i nasmejanih kuvara i pizza majstora.</p> <br>
+              <p id="tekst2"> Vođeni željom da gostima priuštimo pravi ukus pizze, pizza peć na drva je naš zaštitni znak, tu su još i strogo birane 
+              namirnice, čiji kvalitet ne sme da oscilira, od probranih i vrhunskih dobavljača. </p> <br>
+              <p id="tekst3">U početku je to bio kafić, a danas je "Pizzeria Venice" pizzeria sa velikom i raznovrsnom ponudom italijanske hrane.</p> 
+        </div>
 
+
+        <div id="Meni">
+          <h1 id="naslov2">Meni</h1>
+          <h3 id="naslovi_pizza">Margarita</h3>
+          <div class="row">
+            <div class="col-sm-3" style="background-color:lavender;">
+               <img id="pizza1_levo" class="rounded" src="images/pizza1.jpg" alt="pizza1">
+            </div>
+            <div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     
+     
+     
+     
+         </div>
   </body>
 </html>
