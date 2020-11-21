@@ -85,6 +85,7 @@ body {
 
 #pizza1 {
     width: 100%;
+    height: 100%;
     
 }
 .col-sm-3 {
@@ -92,10 +93,53 @@ body {
     
 }
 
-.col-sm-8 {
+.col-sm-9 {
     padding: 0;
+    display: flex;
+    flex-direction: column;
     
 }
+
+.sadrzaj_gore {
+    height: 40%;
+    border-bottom: 5px solid green;
+}
+
+.sadrzaj_dole {
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#sastojci_naslov {
+    text-align: center;
+}
+
+#sastojci_tekst {
+    margin: 1%;
+    text-align: center;
+    margin-top: 0.3%;
+}
+
+.velicina_pizze {
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.kolicina_pizze {
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.dugme_naruci {
+    align-self: center;
+    margin-left: 10%;
+    margin-right: 2%;
+}
+
+
+
 
 .row {
     width: 100%;
