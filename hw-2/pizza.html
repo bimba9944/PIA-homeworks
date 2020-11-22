@@ -59,7 +59,7 @@
              <a class="nav-link" href="#Meni">Meni</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#">Kontakt</a>
+             <a class="nav-link" href="#Kontakt">Kontakt</a>
            </li>
          </ul>
     
@@ -93,17 +93,17 @@
                 <form action="/action_page.php">
                   <div class="form-check">
                     <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">22cm
+                      <input type="radio" class="form-check-input" name="optradio">22cm(100din)
                     </label>
                   </div>
                   <div class="form-check">
                     <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">33cm
+                      <input type="radio" class="form-check-input" name="optradio">33cm(200din)
                     </label>
                   </div>
                   <div class="form-check disabled">
                     <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">50cm
+                      <input type="radio" class="form-check-input" name="optradio">50cm(600din)
                     </label>
                   </div>
                 </form>
@@ -154,17 +154,17 @@
                    <form action="/action_page.php">
                      <div class="form-check">
                       <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">22cm
+                      <input type="radio" class="form-check-input" name="optradio">22cm(140din)
                       </label>
                      </div>
                     <div class="form-check">
                       <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">33cm
+                      <input type="radio" class="form-check-input" name="optradio">33cm(300din)
                       </label>
                     </div>
                     <div class="form-check disabled">
                       <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">50cm
+                      <input type="radio" class="form-check-input" name="optradio">50cm(700din)
                       </label>
                     </div>
                   </form>
@@ -214,17 +214,17 @@
                    <form action="/action_page.php">
                      <div class="form-check">
                       <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">22cm
+                      <input type="radio" class="form-check-input" name="optradio">22cm(100din)
                       </label>
                      </div>
                     <div class="form-check">
                       <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">33cm
+                      <input type="radio" class="form-check-input" name="optradio">33cm(200din)
                       </label>
                     </div>
                     <div class="form-check disabled">
                       <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">50cm
+                      <input type="radio" class="form-check-input" name="optradio">50cm(600din)
                       </label>
                     </div>
                   </form>
@@ -274,17 +274,17 @@
                    <form action="/action_page.php">
                      <div class="form-check">
                       <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">22cm
+                      <input type="radio" class="form-check-input" name="optradio">22cm(180din)
                       </label>
                      </div>
                     <div class="form-check">
                       <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">33cm
+                      <input type="radio" class="form-check-input" name="optradio">33cm(350din)
                       </label>
                     </div>
                     <div class="form-check disabled">
                       <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">50cm
+                      <input type="radio" class="form-check-input" name="optradio">50cm(800din)
                       </label>
                     </div>
                   </form>
@@ -335,17 +335,17 @@
                    <form action="/action_page.php">
                      <div class="form-check">
                       <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">22cm
+                      <input type="radio" class="form-check-input" name="optradio">22cm(200din)
                       </label>
                      </div>
                     <div class="form-check">
                       <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">33cm
+                      <input type="radio" class="form-check-input" name="optradio">33cm(450din)
                       </label>
                     </div>
                     <div class="form-check disabled">
                       <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="optradio">50cm
+                      <input type="radio" class="form-check-input" name="optradio">50cm(900din)
                       </label>
                     </div>
                   </form>
@@ -381,7 +381,33 @@
 
        <div id="Kontakt">
          <h1 id="naslov3">Kontakt</h1>
-         
+         <div class="container">
+          <form action="/action_page.php" class="was-validated">
+            <div class="form-group">
+              <label for="usr">Name:</label>
+              <input type="text" class="form-control" placeholder="Enter name" id="usr" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+              <label for="usr">Phone number:</label>
+              <input type="text" class="form-control" placeholder="Enter phone number" id="phone">
+            </div>
+            <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="5" placeholder="Enter your comment" id="comment" required></textarea>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+         </div>   
        </div>
 
 
@@ -403,6 +429,6 @@
      
      
      
-         </div>
+    </div>
   </body>
 </html>
