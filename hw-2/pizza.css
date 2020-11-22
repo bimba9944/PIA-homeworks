@@ -125,11 +125,13 @@ body {
 .velicina_pizze {
     margin-left: 3%;
     margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 .kolicina_pizze {
     margin-left: 10%;
     margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 .dugme_naruci {
@@ -161,6 +163,12 @@ body {
     width: 100%;
     height: 230px;
 }
+
+#pizza3 {
+    width: 100%;
+    height: 230px;
+}
+
 
 
 
