@@ -36,12 +36,17 @@ h1 {
 }
 
 footer {
-     margin-left: 22.5%;
-     margin-right: 22.5%;
      text-align: center;
-     background-color:  #A2B964;
      padding: 0.5em;
-     box-shadow: 5px 5px 5px grey;
+     margin-left: 65%;
+}
+
+.div4 {
+     
+     padding-top: 0.5em;
+     padding-bottom: 0.5em;
+     background-color:  #A2B964;
+     
 }
 
 .div3 {
@@ -69,6 +74,7 @@ footer {
      font-family: Georgia, 'Times New Roman', Times, serif;
      margin: 1em;
      overflow: auto;
+     
 }
 
 .kritika {
