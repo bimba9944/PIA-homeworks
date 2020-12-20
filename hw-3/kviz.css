@@ -1,3 +1,8 @@
+body {
+    background-color: darkgray;
+    text-align: center;
+}
+
 .container-fluid { 
     padding-left: 0%;
     padding-right: 0%;
@@ -20,9 +25,15 @@
     height: 800px;
     text-align: center;
     border: solid black;
-    background-repeat: no-repeat;
     background-position: center;
 }
+
+ @media only screen and (max-width: 600px){
+    #pozadina {
+        background-image: url(images/pozadina1.jpg);
+        background-position: left;
+    }
+} 
 
 #pozadina label {
     margin-top: 5%;
