@@ -17,10 +17,11 @@
 
 #pozadina {
     background-image: url("images/pozadina.jpg"); 
-    background-size: cover;
+    height: 800px;
     text-align: center;
-    border: solid orange;
-    
+    border: solid black;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #pozadina label {
@@ -40,5 +41,25 @@
     margin-top: 3%;
 }
 
+#pravila h3 {
+    margin-top: 5%;
+    font-size: 150%;
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
 
+#pravila {
+    background-color: whitesmoke;
+    margin-top: 10%;
+    text-align: center;
+    border-radius: 3px;
+    
+}
+#pravila p {
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-bottom: 3%;
+}
 
