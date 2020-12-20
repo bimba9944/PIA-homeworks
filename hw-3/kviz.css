@@ -1,0 +1,44 @@
+.container-fluid { 
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+#naslov {
+    background-color: darkgrey;
+    text-align: center;
+    padding: 30px;
+}
+
+#naslov h2 {
+    font-size: 300%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px black;
+}
+
+#pozadina {
+    background-image: url("images/pozadina.jpg"); 
+    background-size: cover;
+    text-align: center;
+    border: solid orange;
+    
+}
+
+#pozadina label {
+    margin-top: 5%;
+    font-size: 150%;
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+}
+
+#pozadina input {
+    width: 50%;
+    margin-left: 25%;
+}
+
+#start {
+    background-color: darkgrey;
+    margin-top: 3%;
+}
+
+
+
