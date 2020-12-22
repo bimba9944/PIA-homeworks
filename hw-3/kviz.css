@@ -1,7 +1,16 @@
 body {
-    background-color: darkgray;
+    /* background-color: darkgray;  */
     text-align: center;
+    background-image: url(images/pozadina.jpg); 
+    /* height: 800px;  */
 }
+
+@media only screen and (max-width: 600px){
+    body {
+        background-image: url(images/pozadina2.jpg);
+        background-position: center;
+    }
+} 
 
 .container-fluid { 
     padding-left: 0%;
@@ -74,3 +83,49 @@ body {
     padding-bottom: 3%;
 }
 
+.pitanja {
+    margin-top: 10%;
+    background-color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+@media only screen and (max-width: 600px){
+    .pitanja {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+} 
+
+#odgovori {
+    text-align: initial;
+    margin-left: 20%; 
+}
+
+.pitanja button {
+    background-color: black;
+    text-align: initial;
+    margin-right: 54%; 
+    margin-top: 1%;
+}
+
+.pitanja p {
+    font-size: 20px;
+}
+
+#unesi1 {
+    width: 60%;
+}
+
+#unesi2 {
+    width: 60%;
+}
+
+#unesi3 {
+    width: 60%;
+}
