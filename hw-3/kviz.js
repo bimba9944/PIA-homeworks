@@ -179,3 +179,10 @@ function prikaz10(){
     document.getElementById("broj10").innerHTML = myObj.deseto.broj;
     document.getElementById("tekst_pitanje10").innerHTML = myObj.deseto.pitanje;
 }
+
+$(document).ready(function(){
+    $("#sledece10").click(function(){
+            $("#pitanje10").hide();
+            $("#kraj").fadeIn();
+        });
+});
