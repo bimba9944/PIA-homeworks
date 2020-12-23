@@ -311,6 +311,7 @@ $(document).ready(function(){
         document.getElementById("radio3").disabled = true; 
         document.getElementById("radio4").disabled = true; 
         prikaz11();
+        setTimeout(funkcija1, 2000);
         });
 });
 
@@ -323,6 +324,7 @@ $(document).ready(function(){
         document.getElementById("radio7").disabled = true; 
         document.getElementById("radio8").disabled = true; 
         prikaz22();
+        setTimeout(funkcija2, 2000);
         });
 });
 
@@ -335,6 +337,7 @@ $(document).ready(function(){
         document.getElementById("radio11").disabled = true; 
         document.getElementById("radio12").disabled = true; 
         prikaz33();
+        setTimeout(funkcija3, 2000);
         });
 });
 
@@ -347,6 +350,7 @@ $(document).ready(function(){
         document.getElementById("radio15").disabled = true; 
         document.getElementById("radio16").disabled = true; 
         prikaz44();
+        setTimeout(funkcija4, 2000);
         });
 });
 
@@ -359,6 +363,7 @@ $(document).ready(function(){
         document.getElementById("radio19").disabled = true; 
         document.getElementById("radio20").disabled = true; 
         prikaz55();
+        setTimeout(funkcija5, 2000);
         });
 });
 
@@ -369,6 +374,7 @@ $(document).ready(function(){
         document.getElementById("radio21").disabled = true; 
         document.getElementById("radio22").disabled = true; 
         prikaz66();
+        setTimeout(funkcija6, 2000);
         });
 });
 
@@ -379,6 +385,7 @@ $(document).ready(function(){
         document.getElementById("radio23").disabled = true; 
         document.getElementById("radio24").disabled = true; 
         prikaz77();
+        setTimeout(funkcija7, 2000);
         });
 });
 
@@ -388,6 +395,7 @@ $(document).ready(function(){
         // document.getElementById("preskoci8").disabled = true;  
         document.getElementById("unesi1").disabled = true; 
         prikaz88();
+        setTimeout(funkcija8, 2000);
         });
 });
 
@@ -397,6 +405,7 @@ $(document).ready(function(){
         // document.getElementById("preskoci9").disabled = true;  
         document.getElementById("unesi2").disabled = true; 
         prikaz99();
+        setTimeout(funkcija9, 2000);
         });
 });
 
@@ -406,6 +415,7 @@ $(document).ready(function(){
         // document.getElementById("preskoci10").disabled = true;  
         document.getElementById("unesi3").disabled = true; 
         prikaz1010();
+        setTimeout(funkcija10, 2000);
         });
 });
 
@@ -423,80 +433,112 @@ $(document).ready(function(){
 
 $(document).ready(function(){
      $("#preskoci1").click(function(){
-             $("#pitanje1").hide();
-             $("#pitanje2").fadeIn();
-             prikaz2();
+           funkcija1();
          });
 });
 
 $(document).ready(function(){
     $("#preskoci2").click(function(){
-            $("#pitanje2").hide();
-            $("#pitanje3").fadeIn();
-            prikaz3();
+           funkcija2();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci3").click(function(){
-            $("#pitanje3").hide();
-            $("#pitanje4").fadeIn();
-            prikaz4();
+            funkcija3();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci4").click(function(){
-            $("#pitanje4").hide();
-            $("#pitanje5").fadeIn();
-            prikaz5();
+            funkcija4();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci5").click(function(){
-            $("#pitanje5").hide();
-            $("#pitanje6").fadeIn();
-            prikaz6();
+            funkcija5();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci6").click(function(){
-            $("#pitanje6").hide();
-            $("#pitanje7").fadeIn();
-            prikaz7();
+            funkcija6();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci7").click(function(){
-            $("#pitanje7").hide();
-            $("#pitanje8").fadeIn();
-            prikaz8();
+             funkcija7();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci8").click(function(){
-            $("#pitanje8").hide();
-            $("#pitanje9").fadeIn();
-            prikaz9();
+             funkcija8();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci9").click(function(){
-            $("#pitanje9").hide();
-            $("#pitanje10").fadeIn();
-            prikaz10();
+             funkcija9();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci10").click(function(){
-            $("#pitanje10").hide();
-            $("#kraj").fadeIn();
-            document.getElementById("poeni_naslov").innerHTML = "Number of points: "+bodovi.toString();
+            funkcija10();
         });
 });
+
+function funkcija1(){
+    $("#pitanje1").hide();
+    $("#pitanje2").fadeIn();
+    prikaz2();
+}
+
+function funkcija2(){
+    $("#pitanje2").hide();
+    $("#pitanje3").fadeIn();
+    prikaz3();
+}
+function funkcija3(){
+    $("#pitanje3").hide();
+    $("#pitanje4").fadeIn();
+    prikaz4();
+}
+function funkcija4(){
+    $("#pitanje4").hide();
+    $("#pitanje5").fadeIn();
+    prikaz5();
+}
+function funkcija5() {
+    $("#pitanje5").hide();
+    $("#pitanje6").fadeIn();
+    prikaz6();
+}
+function funkcija6(){
+    $("#pitanje6").hide();
+    $("#pitanje7").fadeIn();
+    prikaz7();
+}
+function funkcija7(){
+    $("#pitanje7").hide();
+    $("#pitanje8").fadeIn();
+    prikaz8();
+}
+function funkcija8(){
+    $("#pitanje8").hide();
+    $("#pitanje9").fadeIn();
+    prikaz9();
+}
+function funkcija9(){
+    $("#pitanje9").hide();
+    $("#pitanje10").fadeIn();
+    prikaz10();
+}
+function funkcija10(){
+    $("#pitanje10").hide();
+    $("#kraj").fadeIn();
+    document.getElementById("poeni_naslov").innerHTML = "Number of points: "+bodovi.toString();
+}
