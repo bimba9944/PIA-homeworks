@@ -21,13 +21,19 @@ localStorage.setItem("testJSON", myJSON);
 var text = localStorage.getItem("testJSON");
 var obj = JSON.parse(text);
 
+$(document).ready(function(){
+    $("#poeni_vreme").css("display", "none");
+  });
+
 
 $(document).ready(function(){
     $("#start").click(function(){
         var ime = $("#uname").val().toString();
         if (ime != ""){
             $("#pozadina").hide();
+            $("#naslov").hide();
             $("#pitanje1").fadeIn();
+            $("#poeni_vreme").fadeIn();
             // $("#naslov").css({"border": "solid"});
             prikaz1();
         }

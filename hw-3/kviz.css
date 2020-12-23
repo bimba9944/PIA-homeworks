@@ -157,3 +157,37 @@ body {
     margin-top: 1%;
     margin-bottom: 1%;
 }
+
+#poeni_vreme {
+    position: sticky;
+    top: 0;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+}
+
+#odustani {
+    text-align: start;
+}
+
+#vreme {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+#poeni {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#poeni_vreme div{
+    width: 33.3%;
+    padding: 5px;
+    font-size: large; 
+}
+
+
+
+
+
