@@ -40,6 +40,14 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#odustani_dugme").click(function(){
+        $("#kraj").fadeIn();
+        $(".pitanja").hide();
+        document.getElementById("poeni_naslov").innerHTML = "Number of points: "+bodovi.toString();
+        });
+});
+
 function prikaz1(){
     document.getElementById("broj1").innerHTML = myObj.prvo.broj;
     document.getElementById("tekst_pitanje1").innerHTML = myObj.prvo.pitanje;
@@ -114,6 +122,8 @@ function prikaz10(){
     document.getElementById("tekst_pitanje10").innerHTML = myObj.deseto.pitanje;
 }
 
+var bodovi = 0;
+
 function prikaz11(){
     if(document.getElementById("radio1").checked){
         $("#jedan").css({"color": "red"});
@@ -125,6 +135,8 @@ function prikaz11(){
     }
     if(document.getElementById("radio3").checked){
         $("#tri").css({"color": "chartreuse"});
+        bodovi++;
+        document.getElementById("poeni").innerHTML = "Points: "+bodovi.toString();
     }
     if(document.getElementById("radio4").checked){
         $("#cetri").css({"color": "red"});
@@ -134,7 +146,9 @@ function prikaz11(){
 
 function prikaz22(){
     if(document.getElementById("radio5").checked){
-        $("#pet").css({"color": "chartreuse"});   
+        $("#pet").css({"color": "chartreuse"});  
+        bodovi++; 
+        document.getElementById("poeni").innerHTML = "Points: "+bodovi.toString();
     }
     if(document.getElementById("radio6").checked){
         $("#sest").css({"color": "red"});
@@ -157,6 +171,8 @@ function prikaz33(){
     }
     if(document.getElementById("radio10").checked){
         $("#deset").css({"color": "chartreuse"});
+        bodovi++;
+        document.getElementById("poeni").innerHTML = "Points: "+bodovi.toString();
     }
     if(document.getElementById("radio11").checked){
         $("#jedanaest").css({"color": "red"});
@@ -175,6 +191,8 @@ function prikaz44(){
     }
     if(document.getElementById("radio14").checked){
         $("#cetrnaest").css({"color": "chartreuse"});
+        bodovi++;
+        document.getElementById("poeni").innerHTML = "Points: "+bodovi.toString();
     }
     if(document.getElementById("radio15").checked){
         $("#petnaest").css({"color": "red"});
@@ -188,7 +206,9 @@ function prikaz44(){
 
 function prikaz55(){
     if(document.getElementById("radio17").checked){
-        $("#sedamnaest").css({"color": "chartreuse"});   
+        $("#sedamnaest").css({"color": "chartreuse"}); 
+        bodovi++;  
+        document.getElementById("poeni").innerHTML = "Points: "+bodovi.toString();
     }
     if(document.getElementById("radio18").checked){
         $("#osamnaest").css({"color": "red"});
@@ -206,7 +226,9 @@ function prikaz55(){
 
 function prikaz66(){
     if(document.getElementById("radio21").checked){
-        $("#dvadeset1").css({"color": "chartreuse"});   
+        $("#dvadeset1").css({"color": "chartreuse"});  
+        bodovi++; 
+        document.getElementById("poeni").innerHTML = "Points: "+bodovi.toString();
     }
     if(document.getElementById("radio22").checked){
         $("#dvadeset2").css({"color": "red"});
@@ -216,7 +238,9 @@ function prikaz66(){
 
 function prikaz77(){
     if(document.getElementById("radio23").checked){
-        $("#dvadeset3").css({"color": "chartreuse"});   
+        $("#dvadeset3").css({"color": "chartreuse"});
+        bodovi++;   
+        document.getElementById("poeni").innerHTML = "Points: "+bodovi.toString();
     }
     if(document.getElementById("radio24").checked){
         $("#dvadeset4").css({"color": "red"});
@@ -229,6 +253,8 @@ function prikaz88(){
     var provera2 = myObj.osmo.odgovori.tacan;
     if(provera1 == provera2){
         $("#unesi1").css({"background-color": "chartreuse"});
+        bodovi++;
+        document.getElementById("poeni").innerHTML = "Points: "+bodovi.toString();
     }
     if(provera1 != provera2){
         $("#unesi1").css({"background-color": "red"});
@@ -242,6 +268,8 @@ function prikaz99(){
     var provera4 = myObj.deveto.odgovori.tacan;
     if(provera3 == provera4){
         $("#unesi2").css({"background-color": "chartreuse"});
+        bodovi++;
+        document.getElementById("poeni").innerHTML = "Points: "+bodovi.toString();
     }
     if(provera3 != provera4){
         $("#unesi2").css({"background-color": "red"});
@@ -255,6 +283,8 @@ function prikaz1010(){
     var provera6 = myObj.deseto.odgovori.tacan;
     if(provera5 == provera6){
         $("#unesi3").css({"background-color": "chartreuse"});
+        bodovi++;
+        document.getElementById("poeni").innerHTML = "Points: "+bodovi.toString();
     }
     if(provera5 != provera6){
         $("#unesi3").css({"background-color": "red"});
@@ -467,5 +497,6 @@ $(document).ready(function(){
     $("#preskoci10").click(function(){
             $("#pitanje10").hide();
             $("#kraj").fadeIn();
+            document.getElementById("poeni_naslov").innerHTML = "Number of points: "+bodovi.toString();
         });
 });
