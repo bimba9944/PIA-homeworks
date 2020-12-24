@@ -36,6 +36,7 @@ $(document).ready(function(){
             $("#poeni_vreme").fadeIn();
             // $("#naslov").css({"border": "solid"});
             prikaz1();
+            tajmer1();
         }
     });
 });
@@ -45,6 +46,7 @@ $(document).ready(function(){
         $("#kraj").fadeIn();
         $(".pitanja").hide();
         document.getElementById("poeni_naslov").innerHTML = "Number of points: "+bodovi.toString();
+        
         });
 });
 
@@ -305,7 +307,7 @@ function prikaz1010(){
 $(document).ready(function(){
     $("#sledece1").click(function(){
         document.getElementById("sledece1").disabled = true;  
-        // document.getElementById("preskoci1").disabled = true;  
+        document.getElementById("preskoci1").disabled = true;  
         document.getElementById("radio1").disabled = true; 
         document.getElementById("radio2").disabled = true; 
         document.getElementById("radio3").disabled = true; 
@@ -318,7 +320,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#sledece2").click(function(){
         document.getElementById("sledece2").disabled = true;  
-        // document.getElementById("preskoci2").disabled = true;  
+        document.getElementById("preskoci2").disabled = true;  
         document.getElementById("radio5").disabled = true; 
         document.getElementById("radio6").disabled = true; 
         document.getElementById("radio7").disabled = true; 
@@ -331,7 +333,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#sledece3").click(function(){
         document.getElementById("sledece3").disabled = true;  
-        // document.getElementById("preskoci3").disabled = true;  
+        document.getElementById("preskoci3").disabled = true;  
         document.getElementById("radio9").disabled = true; 
         document.getElementById("radio10").disabled = true; 
         document.getElementById("radio11").disabled = true; 
@@ -344,7 +346,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#sledece4").click(function(){
         document.getElementById("sledece4").disabled = true;  
-        // document.getElementById("preskoci4").disabled = true;  
+        document.getElementById("preskoci4").disabled = true;  
         document.getElementById("radio13").disabled = true; 
         document.getElementById("radio14").disabled = true; 
         document.getElementById("radio15").disabled = true; 
@@ -357,7 +359,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#sledece5").click(function(){
         document.getElementById("sledece5").disabled = true;  
-        // document.getElementById("preskoci5").disabled = true;  
+        document.getElementById("preskoci5").disabled = true;  
         document.getElementById("radio17").disabled = true; 
         document.getElementById("radio18").disabled = true; 
         document.getElementById("radio19").disabled = true; 
@@ -370,7 +372,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#sledece6").click(function(){
         document.getElementById("sledece6").disabled = true;  
-        // document.getElementById("preskoci6").disabled = true;  
+        document.getElementById("preskoci6").disabled = true;  
         document.getElementById("radio21").disabled = true; 
         document.getElementById("radio22").disabled = true; 
         prikaz66();
@@ -381,7 +383,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#sledece7").click(function(){
         document.getElementById("sledece7").disabled = true;  
-        // document.getElementById("preskoci7").disabled = true;  
+        document.getElementById("preskoci7").disabled = true;  
         document.getElementById("radio23").disabled = true; 
         document.getElementById("radio24").disabled = true; 
         prikaz77();
@@ -392,7 +394,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#sledece8").click(function(){
         document.getElementById("sledece8").disabled = true;  
-        // document.getElementById("preskoci8").disabled = true;  
+        document.getElementById("preskoci8").disabled = true;  
         document.getElementById("unesi1").disabled = true; 
         prikaz88();
         setTimeout(funkcija8, 2000);
@@ -402,7 +404,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#sledece9").click(function(){
         document.getElementById("sledece9").disabled = true;  
-        // document.getElementById("preskoci9").disabled = true;  
+        document.getElementById("preskoci9").disabled = true;  
         document.getElementById("unesi2").disabled = true; 
         prikaz99();
         setTimeout(funkcija9, 2000);
@@ -412,7 +414,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#sledece10").click(function(){
         document.getElementById("sledece10").disabled = true;  
-        // document.getElementById("preskoci10").disabled = true;  
+        document.getElementById("preskoci10").disabled = true;  
         document.getElementById("unesi3").disabled = true; 
         prikaz1010();
         setTimeout(funkcija10, 2000);
@@ -433,112 +435,388 @@ $(document).ready(function(){
 
 $(document).ready(function(){
      $("#preskoci1").click(function(){
-           funkcija1();
+        document.getElementById("sledece1").disabled = true;  
+        document.getElementById("preskoci1").disabled = true;     
+        funkcija1();
          });
 });
 
 $(document).ready(function(){
     $("#preskoci2").click(function(){
-           funkcija2();
+        document.getElementById("sledece2").disabled = true;  
+        document.getElementById("preskoci2").disabled = true;   
+        funkcija2();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci3").click(function(){
-            funkcija3();
+        document.getElementById("sledece3").disabled = true;  
+        document.getElementById("preskoci3").disabled = true;  
+        funkcija3();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci4").click(function(){
-            funkcija4();
+        document.getElementById("sledece4").disabled = true;  
+        document.getElementById("preskoci4").disabled = true;  
+        funkcija4();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci5").click(function(){
-            funkcija5();
+        document.getElementById("sledece5").disabled = true;  
+        document.getElementById("preskoci5").disabled = true;  
+        funkcija5();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci6").click(function(){
-            funkcija6();
+        document.getElementById("sledece6").disabled = true;  
+        document.getElementById("preskoci6").disabled = true;  
+        funkcija6();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci7").click(function(){
-             funkcija7();
+        document.getElementById("sledece7").disabled = true;  
+        document.getElementById("preskoci7").disabled = true;  
+        funkcija7();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci8").click(function(){
-             funkcija8();
+        document.getElementById("sledece8").disabled = true;  
+        document.getElementById("preskoci8").disabled = true;  
+        funkcija8();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci9").click(function(){
-             funkcija9();
+        document.getElementById("sledece9").disabled = true;  
+        document.getElementById("preskoci9").disabled = true;  
+        funkcija9();
         });
 });
 
 $(document).ready(function(){
     $("#preskoci10").click(function(){
-            funkcija10();
+        document.getElementById("sledece10").disabled = true;  
+        document.getElementById("preskoci10").disabled = true;  
+        funkcija10();
         });
 });
 
 function funkcija1(){
-    $("#pitanje1").hide();
-    $("#pitanje2").fadeIn();
+    $("#pitanje1").hide(1000);
+    $("#pitanje2").fadeIn(1500);
     prikaz2();
+    tajmer2();
 }
 
 function funkcija2(){
-    $("#pitanje2").hide();
-    $("#pitanje3").fadeIn();
+    $("#pitanje2").hide(1000);
+    $("#pitanje3").fadeIn(1500);
     prikaz3();
+    tajmer3();
 }
 function funkcija3(){
-    $("#pitanje3").hide();
-    $("#pitanje4").fadeIn();
+    $("#pitanje3").hide(1000);
+    $("#pitanje4").fadeIn(1500);
     prikaz4();
+    tajmer4();
 }
 function funkcija4(){
-    $("#pitanje4").hide();
-    $("#pitanje5").fadeIn();
+    $("#pitanje4").hide(1000);
+    $("#pitanje5").fadeIn(1500);
     prikaz5();
+    tajmer5();
 }
 function funkcija5() {
-    $("#pitanje5").hide();
-    $("#pitanje6").fadeIn();
+    $("#pitanje5").hide(1000);
+    $("#pitanje6").fadeIn(1500);
     prikaz6();
+    tajmer6();
 }
 function funkcija6(){
-    $("#pitanje6").hide();
-    $("#pitanje7").fadeIn();
+    $("#pitanje6").hide(1000);
+    $("#pitanje7").fadeIn(1500);
     prikaz7();
+    tajmer7();
 }
 function funkcija7(){
-    $("#pitanje7").hide();
-    $("#pitanje8").fadeIn();
+    $("#pitanje7").hide(1000);
+    $("#pitanje8").fadeIn(1500);
     prikaz8();
+    tajmer8();
 }
 function funkcija8(){
-    $("#pitanje8").hide();
-    $("#pitanje9").fadeIn();
+    $("#pitanje8").hide(1000);
+    $("#pitanje9").fadeIn(1500);
     prikaz9();
+    tajmer9();
 }
 function funkcija9(){
-    $("#pitanje9").hide();
-    $("#pitanje10").fadeIn();
+    $("#pitanje9").hide(1000);
+    $("#pitanje10").fadeIn(1500);
     prikaz10();
+    tajmer10();
 }
 function funkcija10(){
-    $("#pitanje10").hide();
-    $("#kraj").fadeIn();
+    $("#pitanje10").hide(1000);
+    $("#kraj").fadeIn(1500);
     document.getElementById("poeni_naslov").innerHTML = "Number of points: "+bodovi.toString();
+    $(document).ready(function(){
+        $("#poeni_vreme").css("display", "none");
+      });
 }
+
+function tajmer1(){
+var sekunde1 = 19;
+var timerForNext1 = setInterval(afterInterval1, 1000);
+document.getElementById("vreme").innerHTML = "Тimer: 20";
+function afterInterval1() {
+    document.getElementById("vreme").innerHTML = "Тimer: " + sekunde1;
+    document.getElementById("sledece1").onclick = tajmer11;
+    document.getElementById("preskoci1").onclick = tajmer11;
+    document.getElementById("odustani_dugme").onclick = tajmer11;
+    function tajmer11(){
+      document.getElementById("vreme").innerHTML = "Тimer: 20";
+      clearInterval(timerForNext1);
+      document.getElementById("sledece1").disabled = true;  
+      document.getElementById("preskoci1").disabled = true; 
+      sekunde1 = 19;
+    }
+    sekunde1--;
+    if (sekunde1 == -2) {
+      clearInterval(timerForNext1);
+      funkcija1();
+    }
+  }
+}
+
+function tajmer2(){
+    var sekunde2 = 19;
+    var timerForNext2 = setInterval(afterInterval2, 1000);
+    document.getElementById("vreme").innerHTML = "Тimer: 20";
+    function afterInterval2() {
+        document.getElementById("vreme").innerHTML = "Тimer: " + sekunde2;
+        document.getElementById("sledece2").onclick = tajmer22;
+        document.getElementById("preskoci2").onclick = tajmer22;
+        document.getElementById("odustani_dugme").onclick = tajmer22;
+        function tajmer22(){
+          document.getElementById("vreme").innerHTML = "Тimer: 20";
+          clearInterval(timerForNext2);
+          document.getElementById("sledece2").disabled = true;  
+          document.getElementById("preskoci2").disabled = true; 
+          sekunde2 = 19;
+        }
+        sekunde2--;
+        if (sekunde2 == -2) {
+          clearInterval(timerForNext2);
+          funkcija2();
+     }
+  }
+}
+
+function tajmer3(){
+    var sekunde3 = 19;
+    var timerForNext3 = setInterval(afterInterval3, 1000);
+    document.getElementById("vreme").innerHTML = "Тimer: 20";
+    function afterInterval3() {
+        document.getElementById("vreme").innerHTML = "Тimer: " + sekunde3
+        document.getElementById("sledece3").onclick = tajmer33;
+        document.getElementById("preskoci3").onclick = tajmer33;
+        document.getElementById("odustani_dugme").onclick = tajmer33;
+        function tajmer33(){
+          document.getElementById("vreme").innerHTML = "Тimer: 20";
+          clearInterval(timerForNext3);
+          document.getElementById("sledece3").disabled = true;  
+          document.getElementById("preskoci3").disabled = true; 
+          sekunde3 = 19;
+        }
+        sekunde3--;
+        if (sekunde3 == -2) {
+          clearInterval(timerForNext3);
+          funkcija3();
+     }
+  }
+}
+
+function tajmer4(){
+    var sekunde4 = 19;
+    var timerForNext4 = setInterval(afterInterval4, 1000);
+    document.getElementById("vreme").innerHTML = "Тimer: 20";
+    function afterInterval4() {
+        document.getElementById("vreme").innerHTML = "Тimer: " + sekunde4
+        document.getElementById("sledece4").onclick = tajmer44;
+        document.getElementById("preskoci4").onclick = tajmer44;
+        document.getElementById("odustani_dugme").onclick = tajmer44;
+        function tajmer44(){
+          document.getElementById("vreme").innerHTML = "Тimer: 20";
+          clearInterval(timerForNext4);
+          document.getElementById("sledece4").disabled = true;  
+          document.getElementById("preskoci4").disabled = true; 
+          sekunde4 = 19;
+        }
+        sekunde4--;
+        if (sekunde4 == -2) {
+          clearInterval(timerForNext4);
+          funkcija4();
+     }
+  }
+}
+
+function tajmer5(){
+    var sekunde5 = 19;
+    var timerForNext5 = setInterval(afterInterval5, 1000);
+    document.getElementById("vreme").innerHTML = "Тimer: 20";
+    function afterInterval5() {
+        document.getElementById("vreme").innerHTML = "Тimer: " + sekunde5
+        document.getElementById("sledece5").onclick = tajmer55;
+        document.getElementById("preskoci5").onclick = tajmer55;
+        document.getElementById("odustani_dugme").onclick = tajmer55;
+        function tajmer55(){
+          document.getElementById("vreme").innerHTML = "Тimer: 20";
+          clearInterval(timerForNext5);
+          document.getElementById("sledece5").disabled = true;  
+          document.getElementById("preskoci5").disabled = true; 
+          sekunde5 = 19;
+        }
+        sekunde5--;
+        if (sekunde5 == -2) {
+          clearInterval(timerForNext5);
+          funkcija5();
+     }
+  }
+}
+
+function tajmer6(){
+    var sekunde6 = 19;
+    var timerForNext6 = setInterval(afterInterval6, 1000);
+    document.getElementById("vreme").innerHTML = "Тimer: 20";
+    function afterInterval6() {
+        document.getElementById("vreme").innerHTML = "Тimer: " + sekunde6
+        document.getElementById("sledece6").onclick = tajmer66;
+        document.getElementById("preskoci6").onclick = tajmer66;
+        document.getElementById("odustani_dugme").onclick = tajmer66;
+        function tajmer66(){
+          document.getElementById("vreme").innerHTML = "Тimer: 20";
+          clearInterval(timerForNext6);
+          document.getElementById("sledece6").disabled = true;  
+          document.getElementById("preskoci6").disabled = true; 
+          sekunde6 = 19;
+        }
+        sekunde6--;
+        if (sekunde6 == -2) {
+          clearInterval(timerForNext6);
+          funkcija6();
+     }
+  }
+}
+
+function tajmer7(){
+    var sekunde7 = 19;
+    var timerForNext7 = setInterval(afterInterval7, 1000);
+    document.getElementById("vreme").innerHTML = "Тimer: 20";
+    function afterInterval7() {
+        document.getElementById("vreme").innerHTML = "Тimer: " + sekunde7
+        document.getElementById("sledece7").onclick = tajmer77;
+        document.getElementById("preskoci7").onclick = tajmer77;
+        document.getElementById("odustani_dugme").onclick = tajmer77;
+        function tajmer77(){
+          document.getElementById("vreme").innerHTML = "Тimer: 20";
+          clearInterval(timerForNext7);
+          document.getElementById("sledece7").disabled = true;  
+          document.getElementById("preskoci7").disabled = true; 
+          sekunde7 = 19;
+        }
+        sekunde7--;
+        if (sekunde7 == -2) {
+          clearInterval(timerForNext7);
+          funkcija7();
+     }
+  }
+}
+
+function tajmer8(){
+    var sekunde8 = 19;
+    var timerForNext8 = setInterval(afterInterval8, 1000);
+    document.getElementById("vreme").innerHTML = "Тimer: 20";
+    function afterInterval8() {
+        document.getElementById("vreme").innerHTML = "Тimer: " + sekunde8
+        document.getElementById("sledece8").onclick = tajmer88;
+        document.getElementById("preskoci8").onclick = tajmer88;
+        document.getElementById("odustani_dugme").onclick = tajmer88;
+        function tajmer88(){
+          document.getElementById("vreme").innerHTML = "Тimer: 20";
+          clearInterval(timerForNext8);
+          document.getElementById("sledece8").disabled = true;  
+          document.getElementById("preskoci8").disabled = true; 
+          sekunde8 = 19;
+        }
+        sekunde8--;
+        if (sekunde8 == -2) {
+          clearInterval(timerForNext8);
+          funkcija8();
+     }
+  }
+}
+
+function tajmer9(){
+    var sekunde9 = 19;
+    var timerForNext9 = setInterval(afterInterval9, 1000);
+    document.getElementById("vreme").innerHTML = "Тimer: 20";
+    function afterInterval9() {
+        document.getElementById("vreme").innerHTML = "Тimer: " + sekunde9
+        document.getElementById("sledece9").onclick = tajmer99;
+        document.getElementById("preskoci9").onclick = tajmer99;
+        document.getElementById("odustani_dugme").onclick = tajmer99;
+        function tajmer99(){
+          document.getElementById("vreme").innerHTML = "Тimer: 20";
+          clearInterval(timerForNext9);
+          document.getElementById("sledece9").disabled = true;  
+          document.getElementById("preskoci9").disabled = true; 
+          sekunde9 = 19;
+        }
+        sekunde9--;
+        if (sekunde9 == -2) {
+          clearInterval(timerForNext9);
+          funkcija9();
+     }
+  }
+}
+
+function tajmer10(){
+    var sekunde10 = 19;
+    var timerForNext10 = setInterval(afterInterval10, 1000);
+    document.getElementById("vreme").innerHTML = "Тimer: 20";
+    function afterInterval10() {
+        document.getElementById("vreme").innerHTML = "Тimer: " + sekunde10
+        document.getElementById("sledece10").onclick = tajmer1010;
+        document.getElementById("preskoci10").onclick = tajmer1010;
+        document.getElementById("odustani_dugme").onclick = tajmer1010;
+        function tajmer1010(){
+          document.getElementById("vreme").innerHTML = "Тimer: 20";
+          clearInterval(timerForNext10);
+          document.getElementById("sledece10").disabled = true;  
+          document.getElementById("preskoci10").disabled = true; 
+          sekunde10 = 19;
+        }
+        sekunde10--;
+        if (sekunde10 == -2) {
+          clearInterval(timerForNext10);
+          funkcija10();
+     }
+  }
+}
+
+
+
+
