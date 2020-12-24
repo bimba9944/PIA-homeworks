@@ -1,25 +1,11 @@
-var myObj = { "prvo": {"broj": "1. Question" , "pitanje":"Which event is generally considered to be the first belligerent act of World War II?" , "odgovori" :
-{"netacan1": "Germany’s attack on Russia", "netacan2":"Germany’s attack on Britain" , "tacan1": "Germany’s attack on Poland" , "netacan3": "Germany’s occupation of Austria" }}
-, "drugo" : {"broj": "2. Question" , "pitanje":"Against which country did the Soviet Union instigate an armed conflict in late 1939?" , "odgovori": 
-{"tacan1": "Finland" , "netacan1": "Yugoslavia" , "netacan2":"Czechoslovakia" , "netacan3": "Hungary"}}
-, "trece" : {"broj": "3. Question" , "pitanje":"Overall, the Battle of Britain is considered to be" , "odgovori": 
-{"netacan1": "A victory for Germany" , "tacan1":"A victory for Britain" , "netacan2":"A victory for neither" , "netacan3":"A minor conflict"}}  
-, "cetvrto": {"broj":"4. Question" , "pitanje":"What was the code name given to Germany’s plan to invade the USSR?" , "odgovori":
-{"netacan1":"Operation Sea Lion" , "tacan1":"Operation Barbarossa" , "netacan2":"Operation Wolfenstein" , "netacan3":"Operation Crossbow"}}
-, "peto" : {"broj":"5. Question" , "pitanje":"On which region of the Soviet Union did Hitler place the highest priority?" , "odgovori":
-{"tacan1":"Ukraine and southern Russia" , "netacan1":"Leningrad and northern Russia" , "netacan2":"Moscow and central Russia" , "netacan3":"Siberia"}}             
-, "sesto" : {"broj":"6. Question" , "pitanje":"During World War II, the Germans had a great victory at Stalingrad." , "odgovori":
-{"tacan":"False" , "netacan":"True"}}
-, "sedmo" : {"broj":"7. Question" , "pitanje":"Japan won the Battle of Midway." , "odgovori":{"tacan": "False" , "netacan": "True"}}
-, "osmo" : {"broj":"8. Question" , "pitanje":"Which country instigated the conflict in North Africa?" , "odgovori": {"tacan":"Italy"}}
-, "deveto" : {"broj":"9. Question" , "pitanje":"Which Allied country’s forces arrived in Berlin first?" , "odgovori": {"tacan":"USSR"}                }
-, "deseto" : {"broj":"10. Question" , "pitanje":"What were the V1 and V2?" , "odgovori":{"tacan":"German missiles"}}
-};
-var myJSON = JSON.stringify(myObj);
-localStorage.setItem("testJSON", myJSON);
+var myObj;
+fetch("./kviz.json").then(function (re){
+    return re.json();
+})
+.then(function(kviz){
+    myObj=kviz; 
+})
 
-var text = localStorage.getItem("testJSON");
-var obj = JSON.parse(text);
 
 $(document).ready(function(){
     $("#poeni_vreme").css("display", "none");
