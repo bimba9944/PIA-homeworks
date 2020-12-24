@@ -295,15 +295,6 @@ function prikaz1010(){
     }
 }
 
-
-
-
-
-
-
-
-
-
 $(document).ready(function(){
     $("#sledece1").click(function(){
         document.getElementById("sledece1").disabled = true;  
@@ -421,18 +412,6 @@ $(document).ready(function(){
         });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function(){
      $("#preskoci1").click(function(){
         document.getElementById("sledece1").disabled = true;  
@@ -514,62 +493,62 @@ $(document).ready(function(){
 });
 
 function funkcija1(){
-    $("#pitanje1").hide(1000);
+    $("#pitanje1").hide(1500);
     $("#pitanje2").fadeIn(1500);
     prikaz2();
     tajmer2();
 }
 
 function funkcija2(){
-    $("#pitanje2").hide(1000);
+    $("#pitanje2").hide(1500);
     $("#pitanje3").fadeIn(1500);
     prikaz3();
     tajmer3();
 }
 function funkcija3(){
-    $("#pitanje3").hide(1000);
+    $("#pitanje3").hide(1500);
     $("#pitanje4").fadeIn(1500);
     prikaz4();
     tajmer4();
 }
 function funkcija4(){
-    $("#pitanje4").hide(1000);
+    $("#pitanje4").hide(1500);
     $("#pitanje5").fadeIn(1500);
     prikaz5();
     tajmer5();
 }
 function funkcija5() {
-    $("#pitanje5").hide(1000);
+    $("#pitanje5").hide(1500);
     $("#pitanje6").fadeIn(1500);
     prikaz6();
     tajmer6();
 }
 function funkcija6(){
-    $("#pitanje6").hide(1000);
+    $("#pitanje6").hide(1500);
     $("#pitanje7").fadeIn(1500);
     prikaz7();
     tajmer7();
 }
 function funkcija7(){
-    $("#pitanje7").hide(1000);
+    $("#pitanje7").hide(1500);
     $("#pitanje8").fadeIn(1500);
     prikaz8();
     tajmer8();
 }
 function funkcija8(){
-    $("#pitanje8").hide(1000);
+    $("#pitanje8").hide(1500);
     $("#pitanje9").fadeIn(1500);
     prikaz9();
     tajmer9();
 }
 function funkcija9(){
-    $("#pitanje9").hide(1000);
+    $("#pitanje9").hide(1500);
     $("#pitanje10").fadeIn(1500);
     prikaz10();
     tajmer10();
 }
 function funkcija10(){
-    $("#pitanje10").hide(1000);
+    $("#pitanje10").hide(1500);
     $("#kraj").fadeIn(1500);
     document.getElementById("poeni_naslov").innerHTML = "Number of points: "+bodovi.toString();
     $(document).ready(function(){
