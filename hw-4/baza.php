@@ -17,7 +17,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     $DB = "CREATE DATABASE IF NOT EXISTS bazaPodataka";
 
     if ($conn->query($DB) === TRUE) {
-        echo "Database created successfully <br/>"; 
+        // echo "Database created successfully <br/>"; 
     } else {
         echo "Error creating database: " . $conn->error;
     }
@@ -42,7 +42,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     )";
 
     if ($connect->query($Tabela1) === TRUE) {
-        echo "Table Tabela1 created successfully";
+        // echo "Table Tabela1 created successfully";
     } else {
         echo "Error creating table: " . $connect->error;
     }

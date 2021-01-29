@@ -31,3 +31,7 @@ body {
     background-color: beige;
 }
 
+.error {
+    color: #FF0000;
+}
+
