@@ -1,0 +1,33 @@
+body {
+    background-color: dimgrey;
+}
+
+#heder {
+    background-color: black;
+    font-weight: bold;
+    padding: 1%;
+
+}
+
+#logo {
+    text-align: center;
+    width: 120px; 
+    padding: 0.5%;
+    font-size: 30px;
+    background-color: #e6b800;
+    border-radius: 5%;
+    margin-left: 5%;
+} 
+
+#signInUp {
+    margin-top: 5%;
+    padding-top: 2%;
+    text-align: center;
+    
+
+}
+
+#input {
+    background-color: beige;
+}
+
