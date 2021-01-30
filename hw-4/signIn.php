@@ -79,7 +79,7 @@
                                     header("Location:nebitno.php");  //treba menjati
                                 }
                                 else{
-                                   header("Location:nebitno.php");  //treba menjati
+                                   header("Location:naslovnaZaClana.php");  //treba menjati
                                 }
                             }
                         }

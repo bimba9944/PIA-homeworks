@@ -82,10 +82,13 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     $godina = "1977";  //change with movie release year
     $poster = "new_hope.png";  //change with movie picture name (picture is in ./images/)
     $trajanje = 121;  //change with movie duration
-    $ocena = 0;  //change with movie grade (initialy 0)
-    $brojOcena = 0;     //change with movie numOfGrades (initialy 0)
+    $ocena = 10;  //change with movie grade (initialy 0)
+    $brojOcena = 1;     //change with movie numOfGrades (initialy 0)
     $stmt1->execute(); 
     $stmt1->close();
+
+
+
 
 
 

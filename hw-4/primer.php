@@ -25,6 +25,20 @@ if ($result->num_rows > 0) {
 } else {
   echo "0 results";
 }
+
+$sql1 = "SELECT idF, naslovF FROM tabelaFilmova";
+$result1 = $conn->query($sql1);
+if ($result1->num_rows > 0) {
+  // output data of each row
+  while($row = $result1->fetch_assoc()) {
+    echo "id: " . $row["idF"]. " - Name: " . $row["naslovF"].  "<br>";
+  }
+} else {
+  echo "0 results";
+}
+
+
+
 $conn->close();
 
 
