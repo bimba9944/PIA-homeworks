@@ -18,30 +18,38 @@
         <div id="logo">IMDb</div>
     </div>
 
-    
-    <div class="container" id="signInUp">
-        <h2>Sign in or Sign up:</h2><br>
+
+    <div class="container" id="signInUp" >
+        <h2>Sign Up:</h2><br>
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-            <b>Username or e-mail: </b> <br>
-            <input id="input" type="text" name="ime" value="<?php echo $ime;?>">
+            <b>Name: </b> <br>
+            <input id="input" type="text" name="Ime" >
             <br>
-            <span class="error"><?php echo $imeErr;?></span>
+            <span class="error"></span>
+            <br>
+            <b>Lastname: </b> <br>
+            <input id="input" type="text" name="Prezime">
+            <br>
+            <span class="error"></span>
+            <br>
+            <b>E-mail: </b> <br>
+            <input id="input" type="text" name="Email">
+            <br>
+            <span class="error"></span>
+            <br>
+            <b>Username: </b> <br>
+            <input id="input" type="text" name="Username">
+            <br>
+            <span class="error"></span>
             <br>
             <b>Password: </b> <br>
-            <input id="input" type="password" name="sifra">
+            <input id="input" type="password" name="Sifra">
             <br>
-            <span class="error"><?php echo $sifraErr;?></span>
+            <span class="error"></span>
             <br>
-            <input id="submit" class="btn btn-outline-warning" type="submit" name="submit" value="Sign in">  
+            <input id="submit" class="btn btn-outline-warning" type="submit" name="Submit" value="Sign Up">  
             <br><br>
-            <b>You don't have account? Sign up! </b> <br>
         </form> 
-        <button id="signUpButton" class="btn btn-outline-warning" onClick="window.location.href='signUpStranica.php'">Sign up</button>
     </div>
-
- 
-
-
-
 </body>
 </html>
