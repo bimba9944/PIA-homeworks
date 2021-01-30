@@ -76,10 +76,10 @@
                             if($rowStat["logovanIliNe"] == "da"){
                                 $_SESSION['logovanIliNe'] = $rowStat["logovanIliNe"];
                                 if($_SESSION['tipNaloga'] == "admin"){
-                                    header("Location:nebitno.php");
+                                    header("Location:nebitno.php");  //treba menjati
                                 }
                                 else{
-                                   // header("Location:pageUser.php");
+                                   header("Location:nebitno.php");  //treba menjati
                                 }
                             }
                         }

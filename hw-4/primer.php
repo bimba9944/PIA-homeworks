@@ -14,13 +14,13 @@ if ($conn->connect_error) {
 
 
 
-$sql = "SELECT id, ime, prezime , logovanIliNe FROM tabelaClanova";
+$sql = "SELECT id, ime, prezime , logovanIliNe , tipNaloga FROM tabelaClanova";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["id"]. " - Name: " . $row["ime"]. "- Prezime " . $row["prezime"].  "- status: " . $row["logovanIliNe"]. "<br>";
+    echo "id: " . $row["id"]. " - Name: " . $row["ime"]. "- Prezime " . $row["prezime"].  "- status: " . $row["logovanIliNe"].  "-tip naloga: "  . $row["tipNaloga"]. "<br>";
   }
 } else {
   echo "0 results";
