@@ -17,7 +17,7 @@
 <?php
     session_start();
     $idClana =  $_SESSION['id'];
-    $imeClana = $_SESSION['ime'];
+    $imeClaan = $_SESSION['ime'];
     $prezimeClana = $_SESSION['prezime'];
     $emailClana = $_SESSION['email'];
     $usernameClana = $_SESSION['username'];
@@ -29,7 +29,7 @@
     }
     ?>
 
-    <div class="row"  id="heder">
+<div class="row"  id="heder">
         <div class="col-sm-3" >
             <div id="logo">IMDb</div>
         </div>
@@ -71,9 +71,16 @@
     </div>
 
 
+
+
     <div id="sviFilmovi" class="container-fluid"><br>
         <div class="kartice">
             <?php
+            $izrazStr = $_GET["izraz"];
+            $izrazMalaSlova = strtolower($izrazStr);
+            $pretragaTip = $_GET["tip"];
+            $obrazac = "/".$izrazMalaSlova."/i";
+
             $servername = "localhost";
             $username = "root";
             $password = "12345";
@@ -89,24 +96,42 @@
             $resultF = $conn->query($selektovaniF);
             $sviFilmovi = "";
             while($rowF = $resultF->fetch_assoc()) {
+                $malaSlovaNaslov = strtolower($rowF["naslovF"]);
+                $malaSlovaZanr = strtolower($rowF["zanr"]);
                 $prosecnaOcena = (float)$rowF["ocena"] / $rowF["brojOcena"];
                 $ispisPrOcene = number_format((float)$prosecnaOcena , 1, '.', '');
-                $sviFilmovi .= '<div class="kartica"><a class="link-kartica" id="'.$rowF["idF"].'" onclick="ucitajStrF('.$rowF["idF"].')">
-                <img src="slike/'.$rowF["poster"].'" alt="moviePicture">
+                if ($pretragaTip == "poNaslovu" && (preg_match($obrazac, $malaSlovaNaslov) != 0)){
+                     $sviFilmovi .= '<div class="kartica"><a class="link-kartica" id="'.$rowF["idF"].'" onclick="ucitajStrF('.$rowF["idF"].')">
+                     <img src="slike/'.$rowF["poster"].'" alt="moviePicture">
+                         <div class="deskripcijaF">
+                             <div class="deskripcijaN" id="deskripcijaN"><span>'.$rowF["naslovF"].'</span><br></div>
+                             <div class="deskripcijaO"><i class="fa fa-star-o" style="color: yellow;"></i>&nbsp;'.$ispisPrOcene.'</div>
+                         </div>
+                         </a>
+                     </div>';
+                
+            }
+
+            else if ($pretragaTip == "poZanru" && (preg_match($obrazac, $malaSlovaZanr) != 0)){
+                 $sviFilmovi .= '<div class="kartica"><a class="link-kartica" id="'.$rowF["idF"].'" onclick="ucitajStrF('.$rowF["idF"].')">
+                 <img src="slike/'.$rowF["poster"].'" alt="moviePicture">
                      <div class="deskripcijaF">
                          <div class="deskripcijaN" id="deskripcijaN"><span>'.$rowF["naslovF"].'</span><br></div>
                          <div class="deskripcijaO"><i class="fa fa-star-o" style="color: yellow;"></i>&nbsp;'.$ispisPrOcene.'</div>
                      </div>
                      </a>
-                </div>';
-                
-            }
+                 </div>';
+                 
+             }
+        }
+
+
             echo $sviFilmovi;
             $conn->close();
             ?>
         </div>
     </div> 
 
-
 </body>
 </html>
+
