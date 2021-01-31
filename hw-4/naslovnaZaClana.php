@@ -17,7 +17,7 @@
 <?php
     session_start();
     $idClana =  $_SESSION['id'];
-    $imeClaan = $_SESSION['ime'];
+    $imeClana = $_SESSION['ime'];
     $prezimeClana = $_SESSION['prezime'];
     $emailClana = $_SESSION['email'];
     $usernameClana = $_SESSION['username'];
@@ -29,7 +29,7 @@
     }
     ?>
 
-    <div class="row" class="sticky-top" id="heder">
+    <div class="row"  id="heder">
         <div class="col-sm-3" >
             <div id="logo">IMDb</div>
         </div>
@@ -59,6 +59,7 @@
         <div class="col-sm-3" id="pretraga">
         <form>
             <input id="Pretraga" type="text" name="search" placeholder="Search..">
+            <button id="pretrazi" type="button" onclick=""><i class="fa fa-search"></i></button>
         </form>
         </div>    
         <div class="col-sm-3" id="formica">
@@ -89,7 +90,7 @@
             $sviFilmovi = "";
             while($rowF = $resultF->fetch_assoc()) {
                 $prosecnaOcena = (float)$rowF["ocena"] / $rowF["brojOcena"];
-                $ispisPrOcene = number_format((float)$prosecnaOcena , 2, '.', '');
+                $ispisPrOcene = number_format((float)$prosecnaOcena , 1, '.', '');
                 $sviFilmovi .= '<div class="kartica"><a class="link-kartica" id="'.$rowF["idF"].'" onclick="ucitajStrF('.$rowF["idF"].')">
                 <img src="slike/'.$rowF["poster"].'" alt="moviePicture">
                      <div class="deskripcijaF">

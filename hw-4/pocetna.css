@@ -64,7 +64,7 @@ body {
 
 
 #Pretraga {
-    width: 100%;
+    width: 90%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -77,6 +77,12 @@ body {
 
 #pretraga {
     text-align: center;
+}
+
+#pretrazi {
+    float: left;
+    width: 10%;
+    margin-top: 3%;
 }
 
 #meni {
@@ -150,4 +156,22 @@ body {
 #dugmeZaD {
     margin-top: 1%;
     margin-left: 3%;
+}
+
+#opisFilma  {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.opis {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slikaFilma img {
+    width: 100%;
+    height: 350px;
 }

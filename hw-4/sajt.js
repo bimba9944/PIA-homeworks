@@ -1,3 +1,3 @@
 function ucitajStrF(idF) {              
-    window.location.href="nebitno.php?uid="+idF;
+    window.location.href="stranicaFilmaC.php?uid="+idF;
 }

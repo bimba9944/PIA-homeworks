@@ -14,7 +14,7 @@
     <script src="sajt.js"></script> 
 </head>
 <body>
-    <div class="sticky-top" id="heder">
+    <div id="heder">
         <div id="logo">IMDb</div>
     </div>
 
