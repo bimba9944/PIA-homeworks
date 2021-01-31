@@ -109,8 +109,10 @@
         $connect->close();
     ?>
 
-    <div id="brisanje">
-        <button class="btn btn-outline-warning" id="dugmeZaB" onclick="">Delete Movie</button>
+    <div id="brisanje" >
+    <form action="brisanjeFilmova.php" method="POST"> 
+        <button class="btn btn-outline-warning" id="dugmeZaB">Delete Movie</button>
+    </form>
     </div>
 
     <div id="opisFilma" class="container"><br>

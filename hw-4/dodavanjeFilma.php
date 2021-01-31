@@ -1,5 +1,5 @@
 <?php
-    $dodajNaslovErr = $dodajZarnErr = $dodajScenaristuErr = $dodajDirektoreErr = $dodajProducenteErr = $dodajGlumceErr = $dodajGodinuErr = $dodajPosterErr = $dodajTrajanjeErr = $dodajOpisErr = "";
+    $dodajNaslovErr = $dodajZanrErr = $dodajScenaristuErr = $dodajDirektoreErr = $dodajProducenteErr = $dodajGlumceErr = $dodajGodinuErr = $dodajPosterErr = $dodajTrajanjeErr = $dodajOpisErr = "";
     $dodajNaslov = $dodajZanr = $dodajScenaristu = $dodajDirektore = $dodajProducente = $dodajGlumce = $dodajGodinu = $dodajPoster = $dodajTrajanje = $dodajOpis = "";
     $dodajOcenu = 10;
     $dodajBrojOcena = 1;

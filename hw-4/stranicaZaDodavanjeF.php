@@ -39,52 +39,52 @@
             Title: <br>
             <input style="width: 60%;" id="input" type="text" name="dodajNaslov">
             <br>
-            <span class="error"></span>
+            <span class="error"><?php echo $dodajNaslovErr;?></span>
             <br>
             Genre(s): <br>
             <input style="width: 60%;" id="input" type="text" name="dodajZanr">
             <br>
-            <span class="error"></span>
+            <span class="error"><?php echo $dodajZanrErr;?></span>
             <br>
             Screenplay: <br>
             <input style="width: 60%;" id="input" type="text" name="dodajScenaristu">
             <br>
-            <span class="error"></span>
+            <span class="error"><?php echo $dodajScenaristuErr;?></span>
             <br>
             Director(s): <br>
             <input style="width: 60%;" id="input" type="text" name="dodajDirektore">
             <br>
-            <span class="error"></span>
+            <span class="error"><?php echo $dodajDirektoreErr;?></span>
             <br>
             Production: <br>
             <input style="width: 60%;" id="input" type="text" name="dodajProducente">
             <br>
-            <span class="error"></span>
+            <span class="error"><?php echo $dodajProducenteErr;?></span>
             <br>
             Starring: <br>
             <input style="width: 60%;" id="input" type="text" name="dodajGlumce">
             <br>
-            <span class="error"></span>
+            <span class="error"><?php echo $dodajGlumceErr;?></span>
             <br>
             Release year: <br>
             <input style="width: 60%;" id="input" type="text" name="dodajGodinu">
             <br>
-            <span class="error"></span>
+            <span class="error"><?php echo $dodajGodinuErr;?></span>
             <br>
             Picture name (from slike/): <br>
             <input style="width: 60%;" id="input" type="text" name="dodajPoster">
             <br>
-            <span class="error"></span>
+            <span class="error"><?php echo $dodajPosterErr;?></span>
             <br>
             Duration (min): <br>
             <input style="width: 60%;" id="input" type="text" name="dodajTrajanje">
             <br>
-            <span class="error"></span>
+            <span class="error"><?php echo $dodajTrajanjeErr;?></span>
             <br>
             Description: <br>
             <textarea style="width: 60%;" id="input" type="text" name="dodajOpis" rows="7"></textarea>
             <br>
-            <span class="error"></span>
+            <span class="error"><?php echo $dodajOpisErr;?></span>
             <br>
             <input id="dodajFilm" class="btn btn-outline-warning" type="submit" name="submit" value="Add movie">  
             <br><br>

@@ -5,3 +5,4 @@ function ucitajStrF(idF) {
 function ucitajStrD() {
     window.location.href="stranicaZaDodavanjeF.php";
 }
+
