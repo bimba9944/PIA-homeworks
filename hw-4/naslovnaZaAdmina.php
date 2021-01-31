@@ -41,17 +41,17 @@
             Movies
         </button>
         <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Comedy</a>
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Drama</a>
-            <a class="dropdown-item" href="#">Sci-Fi</a>
-            <a class="dropdown-item" href="#">Horror</a>
-            <a class="dropdown-item" href="#">Thriller</a>
-            <a class="dropdown-item" href="#">Romance</a>
-            <a class="dropdown-item" href="#">Mystery</a>
-            <a class="dropdown-item" href="#">Crime</a>
-            <a class="dropdown-item" href="#">Adventure</a>
-            <a class="dropdown-item" href="#">Super hero</a>
+            <a class="dropdown-item" href="#" onclick="pretragaPoZanruA('comedy')">Comedy</a>
+            <a class="dropdown-item" href="#" onclick="pretragaPoZanruA('action')">Action</a>
+            <a class="dropdown-item" href="#" onclick="pretragaPoZanruA('drama')">Drama</a>
+            <a class="dropdown-item" href="#" onclick="pretragaPoZanruA('sci-fi')">Sci-Fi</a>
+            <a class="dropdown-item" href="#" onclick="pretragaPoZanruA('horror')">Horror</a>
+            <a class="dropdown-item" href="#" onclick="pretragaPoZanruA('thriller')">Thriller</a>
+            <a class="dropdown-item" href="#" onclick="pretragaPoZanruA('romance')">Romance</a>
+            <a class="dropdown-item" href="#" onclick="pretragaPoZanruA('mystery')">Mystery</a>
+            <a class="dropdown-item" href="#" onclick="pretragaPoZanruA('crime')">Crime</a>
+            <a class="dropdown-item" href="#" onclick="pretragaPoZanruA('adventure')">Adventure</a>
+            <a class="dropdown-item" href="#" onclick="pretragaPoZanruA('super hero')">Super hero</a>
         </div>
         </div>
         </div>
@@ -60,7 +60,7 @@
         <div class="col-sm-3" id="pretraga">
         <form>
             <input id="Pretraga" type="text" name="search" placeholder="Search..">
-            <button id="pretrazi" type="button" onclick=""><i class="fa fa-search"></i></button>
+            <button id="pretrazi" type="button" onclick="pretragaPoNaslovuA()"><i class="fa fa-search"></i></button>
         </form>
         </div>    
         <div class="col-sm-3" id="formica">

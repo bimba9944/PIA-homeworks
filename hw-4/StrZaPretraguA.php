@@ -70,82 +70,69 @@
         </div>
     </div>
 
-    <?php
-
-        $movieId = $_GET["uid"];
-        $servername = "localhost";
-        $username = "root";
-        $password = "12345";
-        $dBase = "bazaPodataka";
-
-        $connect = new mysqli($servername, $username, $password, $dBase);
-
-        $select = "SELECT idF, naslovF, oFilmu, zanr, scenario, direktori, producenti, glumci, produkcija, poster, trajanje, ocena, brojOcena FROM tabelaFilmova WHERE idF=$movieId";
-        $selected = $connect->query($select);
-
-        $selektovanId = "";
-
-        if ($selected ->num_rows > 0) {
-
-            while($row = $selected->fetch_assoc()) {
-                $selektovanId = $row["idF"];
-                $selektovanNaslov = $row["naslovF"];
-                $selektovanOFilmu = $row["oFilmu"];
-                $selektovanZanr = $row["zanr"];
-                $selektovanScenario = $row["scenario"];
-                $selektovanDirektori = $row["direktori"];
-                $selektovanProducenti = $row["producenti"];
-                $selektovanGlumci = $row["glumci"];
-                $selektovanProdukcija = $row["produkcija"];
-                $selektovanPoster = $row["poster"];
-                $selektovanTrajanje = $row["trajanje"];
-                $selektovanOcena= $row["ocena"];
-                $selektovanBrojOcena = $row["brojOcena"];
-                $_SESSION['idF'] = $selektovanId;
-
-            }
-        }
-
-        $connect->close();
-    ?>
-
-    <div id="brisanje" >
-    <form action="brisanjeFilmova.php" method="POST"> 
-        <button class="btn btn-outline-warning" id="dugmeZaB">Delete Movie</button>
-    </form>
+    <div id="dodavanje">
+        <button class="btn btn-outline-warning" id="dugmeZaD" onclick="ucitajStrD()">Add movie</button>
     </div>
 
-    <div id="opisFilma" class="container"><br>
-        <div  class="opis" style="margin-top:4% ;width:50% ; flex-direction: column;">
 
-            <div class="informacije"  >
-                <p style="text-align: center; font-size: x-large; font-weight: bold;"><?php echo $selektovanNaslov?>&ensp;(<?php echo $selektovanProdukcija?>)</p>
-                <?php
-                    $prosecnaOcena = (float)$selektovanOcena / $selektovanBrojOcena;
-                    $ispisPrOcene = number_format((float)$prosecnaOcena , 1, '.', '');
-                ?>
-                <p style="text-align: center;"><b>Rating:</b>&ensp;<?php echo $ispisPrOcene?></p>
-                <p style="text-align: center;"><b>Number of grades:</b>&ensp;<?php echo $selektovanBrojOcena?></p>
-            
-            </div>
+    <div id="sviFilmovi" class="container-fluid"><br>
+        <div class="kartice">
+            <?php
+            $izrazStr = $_GET["izraz"];
+            $izrazMalaSlova = strtolower($izrazStr);
+            $pretragaTip = $_GET["tip"];
+            $obrazac = "/".$izrazMalaSlova."/i";
 
-            <div class="slikaFilma"  ><img style="height:500px; margin-bottom:5% " src="slike/<?php echo $selektovanPoster?>" alt="moviePicture"></div>
+            $servername = "localhost";
+            $username = "root";
+            $password = "12345";
+            $dBase = "bazaPodataka";
 
-        </div>
-        <div class="drugeInf" style="margin-top:20% ; margin-left:5% ; width:30%;">
-            <p><b>Genre(s):</b>&ensp;<?php echo $selektovanZanr?></p>
-            <p><b>Screenplay:</b>&ensp;<?php echo $selektovanScenario?></p>
-            <p><b>Directed by:</b>&ensp;<?php echo $selektovanDirektori?></p>
-            <p><b>Production:</b>&ensp;<?php echo $selektovanProducenti?></p>
-            <p><b>Starring:</b>&ensp;<?php echo $selektovanGlumci?></p>
-            <p><b>Duration:</b>&ensp;<?php echo $selektovanTrajanje?>min</p>
-            <p><b>Description:</b><br><?php echo $selektovanOFilmu?></p>
-            <br>
-                   
+            $conn = new mysqli($servername, $username, $password, $dBase);
 
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+            $selektovaniF = "SELECT idF, naslovF, oFilmu, zanr, scenario, direktori, producenti, glumci, produkcija, poster, trajanje, ocena, brojOcena FROM tabelaFilmova";
+            $resultF = $conn->query($selektovaniF);
+            $sviFilmovi = "";
+            while($rowF = $resultF->fetch_assoc()) {
+                $malaSlovaNaslov = strtolower($rowF["naslovF"]);
+                $malaSlovaZanr = strtolower($rowF["zanr"]);
+                $prosecnaOcena = (float)$rowF["ocena"] / $rowF["brojOcena"];
+                $ispisPrOcene = number_format((float)$prosecnaOcena , 1, '.', '');
+                if ($pretragaTip == "poNaslovu" && (preg_match($obrazac, $malaSlovaNaslov) != 0)){
+                     $sviFilmovi .= '<div class="kartica"><a class="link-kartica" id="'.$rowF["idF"].'" onclick="ucitajStrF('.$rowF["idF"].')">
+                     <img src="slike/'.$rowF["poster"].'" alt="moviePicture">
+                         <div class="deskripcijaF">
+                             <div class="deskripcijaN" id="deskripcijaN"><span>'.$rowF["naslovF"].'</span><br></div>
+                             <div class="deskripcijaO"><i class="fa fa-star-o" style="color: yellow;"></i>&nbsp;'.$ispisPrOcene.'</div>
+                         </div>
+                         </a>
+                     </div>';
+                
+            }
+
+            else if ($pretragaTip == "poZanru" && (preg_match($obrazac, $malaSlovaZanr) != 0)){
+                 $sviFilmovi .= '<div class="kartica"><a class="link-kartica" id="'.$rowF["idF"].'" onclick="ucitajStrF('.$rowF["idF"].')">
+                 <img src="slike/'.$rowF["poster"].'" alt="moviePicture">
+                     <div class="deskripcijaF">
+                         <div class="deskripcijaN" id="deskripcijaN"><span>'.$rowF["naslovF"].'</span><br></div>
+                         <div class="deskripcijaO"><i class="fa fa-star-o" style="color: yellow;"></i>&nbsp;'.$ispisPrOcene.'</div>
+                     </div>
+                     </a>
+                 </div>';
+                 
+             }
+        }
+
+
+            echo $sviFilmovi;
+            $conn->close();
+            ?>
         </div>
     </div> 
-
 
 </body>
 </html>
