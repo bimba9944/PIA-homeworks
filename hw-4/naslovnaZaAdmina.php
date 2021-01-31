@@ -71,7 +71,7 @@
     </div>
 
     <div id="dodavanje">
-        <button class="btn btn-outline-warning" id="dugmeZaD" onclick="">Add movie</button>
+        <button class="btn btn-outline-warning" id="dugmeZaD" onclick="ucitajStrD()">Add movie</button>
     </div>
 
 
