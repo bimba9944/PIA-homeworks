@@ -84,22 +84,22 @@
             $password = "12345";
             $dBase = "bazaPodataka";
 
-            $conn = new mysqli($servername, $username, $password, $dBase);
+            $connect = new mysqli($servername, $username, $password, $dBase);
 
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
+            if ($connect->connect_error) {
+                die("Connection failed: " . $connect->connect_error);
             }
 
             $selektovaniF = "SELECT idF, naslovF, oFilmu, zanr, scenario, direktori, producenti, glumci, produkcija, poster, trajanje, ocena, brojOcena FROM tabelaFilmova";
-            $resultF = $conn->query($selektovaniF);
+            $resultF = $connect->query($selektovaniF);
             $sviFilmovi = "";
-            while($rowF = $resultF->fetch_assoc()) {
-                $prosecnaOcena = (float)$rowF["ocena"] / $rowF["brojOcena"];
+            while($row = $resultF->fetch_assoc()) {
+                $prosecnaOcena = (float)$row["ocena"] / $row["brojOcena"];
                 $ispisPrOcene = number_format((float)$prosecnaOcena , 1, '.', '');
-                $sviFilmovi .= '<div class="kartica"><a class="link-kartica" id="'.$rowF["idF"].'" onclick="ucitajStrF('.$rowF["idF"].')">
-                <img src="slike/'.$rowF["poster"].'" alt="moviePicture">
+                $sviFilmovi .= '<div class="kartica"><a class="link-kartica" id="'.$row["idF"].'" onclick="window.location.href=\'stranicaFilmaA.php?uid='.$row["idF"].'\'">
+                <img src="slike/'.$row["poster"].'" alt="moviePicture">
                      <div class="deskripcijaF">
-                         <div class="deskripcijaN" id="deskripcijaN"><span>'.$rowF["naslovF"].'</span><br></div>
+                         <div class="deskripcijaN" id="deskripcijaN"><span>'.$row["naslovF"].'</span><br></div>
                          <div class="deskripcijaO"><i class="fa fa-star-o" style="color: yellow;"></i>&nbsp;'.$ispisPrOcene.'</div>
                      </div>
                      </a>
@@ -107,7 +107,7 @@
                 
             }
             echo $sviFilmovi;
-            $conn->close();
+            $connect->close();
             ?>
         </div>
     </div> 

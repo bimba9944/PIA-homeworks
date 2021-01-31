@@ -109,6 +109,10 @@
         $connect->close();
     ?>
 
+    <div id="brisanje">
+        <button class="btn btn-outline-warning" id="dugmeZaB" onclick="">Delete Movie</button>
+    </div>
+
     <div id="opisFilma" class="container"><br>
         <div  class="opis" style="margin-top:4% ;width:50% ; flex-direction: column;">
 
