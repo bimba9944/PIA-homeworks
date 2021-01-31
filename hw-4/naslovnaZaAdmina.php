@@ -15,6 +15,7 @@
 </head>
 <body>
 <?php
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     session_start();
     $idClana =  $_SESSION['id'];
     $imeClana = $_SESSION['ime'];
