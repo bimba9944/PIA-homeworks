@@ -70,22 +70,22 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     }
 
 
-    $stmt1 = $connect->prepare("INSERT INTO tabelaFilmova (naslovF, oFilmu, zanr, scenario, direktori, producenti, glumci, produkcija, poster, trajanje, ocena, brojOcena) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt1->bind_param("ssssssssssss", $naslovF, $oFilmu, $zanr, $scenario, $direktori, $produkcija, $glumci, $godina, $poster, $trajanje, $ocena, $brojOcena);
-    $naslovF = "Star Wars: Episode IV - A New Hope";   //change with movie title
-    $oFilmu = "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire."; //change with movie description
-    $zanr = " Action, Adventure, Fantasy"; //change with movie genre
-    $scenario = "George Lucas"; //change with movie screenplay
-    $direktori = "George Lucas";  //change with movie director(s)
-    $produkcija = "Lucasfilm Ltd.";  //change with movie production
-    $glumci = " Mark Hamill, Harrison Ford, Carrie Fisher";  //change with movie starring
-    $godina = "1977";  //change with movie release year
-    $poster = "new_hope.png";  //change with movie picture name (picture is in ./images/)
-    $trajanje = 121;  //change with movie duration
-    $ocena = 10;  //change with movie grade (initialy 0)
-    $brojOcena = 1;     //change with movie numOfGrades (initialy 0)
-    $stmt1->execute(); 
-    $stmt1->close();
+    // $stmt1 = $connect->prepare("INSERT INTO tabelaFilmova (naslovF, oFilmu, zanr, scenario, direktori, producenti, glumci, produkcija, poster, trajanje, ocena, brojOcena) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    // $stmt1->bind_param("ssssssssssss", $naslovF, $oFilmu, $zanr, $scenario, $direktori, $produkcija, $glumci, $godina, $poster, $trajanje, $ocena, $brojOcena);
+    // $naslovF = "Star Wars: Episode IV - A New Hope";   //change with movie title
+    // $oFilmu = "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire."; //change with movie description
+    // $zanr = " Action, Adventure, Fantasy"; //change with movie genre
+    // $scenario = "George Lucas"; //change with movie screenplay
+    // $direktori = "George Lucas";  //change with movie director(s)
+    // $produkcija = "Lucasfilm Ltd.";  //change with movie production
+    // $glumci = " Mark Hamill, Harrison Ford, Carrie Fisher";  //change with movie starring
+    // $godina = "1977";  //change with movie release year
+    // $poster = "new_hope.png";  //change with movie picture name (picture is in ./images/)
+    // $trajanje = 121;  //change with movie duration
+    // $ocena = 10;  //change with movie grade (initialy 0)
+    // $brojOcena = 1;     //change with movie numOfGrades (initialy 0)
+    // $stmt1->execute(); 
+    // $stmt1->close();
 
 
 

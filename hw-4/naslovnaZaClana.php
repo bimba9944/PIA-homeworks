@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="pocetna.css">
-    <!-- <script src="imdb.js"></script> -->
+    <script src="sajt.js"></script>
 </head>
 <body>
 <?php
@@ -30,11 +30,11 @@
     ?>
 
     <div class="row" class="sticky-top" id="heder">
-        <div class="col" >
+        <div class="col-sm-3" >
             <div id="logo">IMDb</div>
         </div>
 
-        <div id="meni" class="col">
+        <div id="meni" class="col-sm-3">
         <div class="dropdown">
         <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
             Movies
@@ -56,21 +56,21 @@
         </div>
 
         
-        <div class="col" id="pretraga">
+        <div class="col-sm-3" id="pretraga">
         <form>
-            <input type="text" name="search" placeholder="Search..">
+            <input id="Pretraga" type="text" name="search" placeholder="Search..">
         </form>
         </div>    
-        <div class="col" id="formica">
+        <div class="col-sm-3" id="formica">
         <div id="user"><?php echo $usernameClana?></div>
-        <form id="signout" action="logOut.php" method="POST"> 
+        <form id="signout" action="odjava.php" method="POST"> 
             <input type="submit" class="btn btn-outline-warning" name="signout" value="Sign Out"/>
         </form>
         </div>
     </div>
 
 
-    <div id="sviFilmovi" class="container"><br>
+    <div id="sviFilmovi" class="container-fluid"><br>
         <div class="kartice">
             <?php
             $servername = "localhost";
@@ -90,7 +90,7 @@
             while($rowF = $resultF->fetch_assoc()) {
                 $prosecnaOcena = (float)$rowF["ocena"] / $rowF["brojOcena"];
                 $ispisPrOcene = number_format((float)$prosecnaOcena , 2, '.', '');
-                $sviFilmovi .= '<div class="kartica"><a class="link-kartica" id="'.$rowF["idF"].'" onclick="loadMoviePage('.$rowF["idF"].')">
+                $sviFilmovi .= '<div class="kartica"><a class="link-kartica" id="'.$rowF["idF"].'" onclick="ucitajStrF('.$rowF["idF"].')">
                 <img src="slike/'.$rowF["poster"].'" alt="moviePicture">
                      <div class="deskripcijaF">
                          <div class="deskripcijaN" id="deskripcijaN"><span>'.$rowF["naslovF"].'</span><br></div>

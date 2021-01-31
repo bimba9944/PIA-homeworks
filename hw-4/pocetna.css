@@ -1,18 +1,13 @@
 body {
-    background-color: dimgrey;
+    background-color: #262626;
     overflow-x: hidden;
 }
 
-@media only screen and (max-width: 500px) {
-    #signout {
-        margin-right: 80%;  }
-    #user {
-        margin-right: 85%; 
-    }
-    #pretraga {
-        text-align: center;
-    }
-  }
+#signInUp b {
+    color: white;
+}
+
+
 
 #heder {
     background-color: black;
@@ -68,38 +63,86 @@ body {
 }
 
 
-
-
-
-#pretraga   input[type=text] {
-    width: 130px;
+#Pretraga {
+    width: 100%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: white;
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    
-}
-  
-#pretraga  input[type=text]:focus {
-    width: 100%;
-    
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
+
 #pretraga {
-    text-align: left;
+    text-align: center;
 }
 
 #meni {
-    margin-top: 0.5%;   
+    margin-top: 0.5%;  
 }
 
 .dropdown {
     text-align: right;
 }
 
+
+#sviFilmovi {
+    margin-top: 5%;
+}
+
+
+.kartice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.kartica {
+    width: 200px;
+    margin: 20px;
+    text-align: left;
+    border-radius: 1%;
+    background-color: black;
+}
+
+.kartica img {
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    width: 100%;
+    height: 250px;
+}
+
+.deskripcijaF {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.link-kartica:link {
+    color: black;
+    text-decoration: none;
+}
+
+.link-kartica:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.link-kartica:hover {
+    color: black;
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.link-kartica:active {
+    color: black;
+    text-decoration: none;
+}
